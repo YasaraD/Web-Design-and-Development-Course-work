@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap');
+body{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+#highScoresList{
+    list-style: none;
+    margin-bottom: 4rem;
+}
+
+.high-score{
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}

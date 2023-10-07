@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap');
+body{
+    color: rgb(0, 0, 0);
+    font-family: 'Nunito', sans-serif;
+}
+
+header .timer{
+    color: rgb(109, 82, 214);
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+    height: 45px;
+    padding: 0 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+}
+
+header .timer .time_left_txt{
+    font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+}
+
+header .timer .timer_sec{
+    font-size: 18px;
+    font-weight: 500;
+    /* height: 30px; */
+    width: 45px;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    background: #343a40;
+    border: 1px solid #343a40;
+    user-select: none;
+}
+
+header .time_line{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: rgb(153, 243, 209);
+}
+
+.choice-container{
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 3rem;
+    min-width: 80rem;
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #eb5e28;
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-prefix{
+    padding: 2rem 2.5rem;
+    color: #d08e1b;
+}
+
+.choice-text{
+    color: #343a40;
+    padding: 2rem;
+    width: 100%;
+    font-weight: bold;
+}
+
+.correct{
+    background: linear-gradient(32deg, rgb(11,223,36) 0%, rgb(41,232,111) 100%);
+}
+
+.incorrect{
+    background: linear-gradient(32deg, rgb(230, 29, 29, 1) 0%, rgb(224, 11, 11, 1) 100%);
+}
+
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+
+#question{
+    color: #070707;
+}
+
+.hud-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text{
+    text-align: center;
+}
+
+#progressBar{
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(11,223,36);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull{
+    height: 100%;
+    background: rgb(11,223,36);
+    width: 0%;
+}
+
+@media  screen and(max-width: 768px){
+    .choice-container{
+        min-width: 40rem;
+    }
+};
+    
